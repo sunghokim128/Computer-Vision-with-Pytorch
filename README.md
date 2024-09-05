@@ -15,6 +15,10 @@ What I have created here is basically a framework that can be used for training 
 
 The datasets I used for this projects are *[MNIST](https://www.tensorflow.org/datasets/catalog/mnist), [CIFAR10, CIFAR100](https://www.cs.toronto.edu/~kriz/cifar.html)*
 
+<img width="434" alt="스크린샷 2024-09-05 오후 4 33 59" src="https://github.com/user-attachments/assets/3588417d-b4c3-4133-9378-dd8f3d1e0623">
+<img width="483" alt="스크린샷 2024-09-05 오후 5 49 51" src="https://github.com/user-attachments/assets/b6e5ee8f-9c07-46b2-8742-d51cf2bd1528">
+
+
 I started from making a simple FCL (Fully-Connected-Layer) model for a MNIST dataset. Then I tried changing the model architechture by changing the number of nodes in the hidden layers and the depth of the model. Plus I tried using different optimizers (learning rate, momentum), loss functions, activation functions to improve the model's accuracy.
 
 Then I tried mimicking models created by others like AlexNet and ResNet by scaling the parameters down to match the datasets I wanted. ( AlexNet, ResNet uses [224x224] images while images in my datasets are [28x28] or [32x32] )
