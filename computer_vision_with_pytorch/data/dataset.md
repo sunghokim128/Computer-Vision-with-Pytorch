@@ -1,13 +1,14 @@
-When it is the first time executing the code, set `download=True` for the datasets in core.dataset
+This folder is where the dataset would be downloaded.
+When it is the fist time executing the code, set `download=True` for the datasets in core.dataset to download the dataset into this folder
+\
 For example: 
 ```python
 torchvision.datasets.MNIST(root='./data', train=True, download=True, transform=transf)
 ```
-
+\
 The raw file is too big to upload in github repositories and is unnecessary anyway
-
-
-
+\
+\
 Here are some examples of what these datasets look like:
 
 ## MNIST
