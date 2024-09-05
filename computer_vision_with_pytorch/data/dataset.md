@@ -9,7 +9,7 @@ The raw file is too big to upload in github repositories and is unnecessary anyw
 Here are some examples of what these datasets look like:
 
 ## MNIST
-![enter image description here](https://storage.googleapis.com/tfds-data/visualization/fig/mnist-3.0.1.png)
+![enter image description here](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*9jCey4wywZ4Os7hF.png)
 
 ## CIFAR10
 ![enter image description here](https://production-media.paperswithcode.com/datasets/4fdf2b82-2bc3-4f97-ba51-400322b228b1.png)
