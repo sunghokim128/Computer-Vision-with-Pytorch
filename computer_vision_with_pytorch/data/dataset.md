@@ -6,8 +6,6 @@ For example:
 torchvision.datasets.MNIST(root='./data', train=True, download=True, transform=transf)
 ```
 <br />
-The raw file is too big to upload in github repositories and is unnecessary anyway
-<br />
 <br />
 Here are some examples of what these datasets look like:
 <br />
