@@ -23,7 +23,7 @@ I started from making a simple FCL (Fully-Connected-Layer) model for a MNIST dat
 
 Then I tried mimicking models created by others like AlexNet and ResNet by scaling the parameters down to match the datasets I wanted. ( AlexNet, ResNet uses [224x224] images while images in my datasets are [28x28] or [32x32] )
 
-The log for training results can be found [here](https://www.notion.so/Image-Classification-with-Pytorch-2024-06-de768c6be5174752ba5c240dd3192053)
+The log for training results can be found [here]([https://www.notion.so/Image-Classification-with-Pytorch-2024-06-de768c6be5174752ba5c240dd3192053](https://www.notion.so/Image-Classification-with-Pytorch-2024-06-2024-08-de768c6be5174752ba5c240dd3192053#ce777ef6b89447e9904bfd1ffddfeff2))
 
 
 ## Requirements
