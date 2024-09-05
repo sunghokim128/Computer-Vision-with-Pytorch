@@ -1,5 +1,11 @@
 # Image Classification with Pytorch
 
+GIF for project demo
+> Input Parse Value & start training GIF
+> Training Ending & Graph showing up
+> Example of model's prediction and answer
+
+
 ## Project Description
 The overall summary of the project can be found in the main.py file.
 What I have created here is basically a framework that can be used for training and evaluating pytorch models that are used to sort images.
@@ -24,17 +30,21 @@ Tqdm
 ```
 
 ## Code Description
-**core**  folder contains modules that are crucial for the framework such as datasets, loss_fuctions and optimizers, plotting, etc
+**core**  folder contains functions that are crucial for the framework such as datasets, loss_fuctions and optimizers, plotting, etc
 
 **data**  folder is where all the downloaded datasets are stored
 
-**trained_model_storaged**  folder is where the framework stores the trained models information (hundreds and thousands of weight and bias values)
+**models** folder ~
 
-**util**  folder contains functions that are used but are not crucial such as changing time format from [seconds] to [hours:minutes:seconds]
+**trained_model_storaged**  folder is where the framework stores the trained models information (about hundreds and thousands of weight and bias values)
 
-**train, test**  are the files needed for training, testing, and additionally training a certain model which are all used in the main file.
+**util**  folder contains functions that are used but are not crucial such as ones changing time format from [seconds] to [minutes:seconds]
 
-The whole process of deciding the model, training parameters, and then training and testing it can be found in the  **main**  file
+**main**  file summarizes the whole process from deciding the training paraters to showing the train & test results in a plot
+
+**train**  file ~
+
+**test** file ~
 
 
 
