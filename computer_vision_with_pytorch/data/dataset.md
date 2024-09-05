@@ -1,11 +1,11 @@
 This folder is where the dataset would be downloaded.
 When it is the fist time executing the code, set `download=True` for the datasets in core.dataset to download the dataset into this folder
 <br />
+<br />
 For example: 
 ```python
 torchvision.datasets.MNIST(root='./data', train=True, download=True, transform=transf)
 ```
-<br />
 <br />
 Here are some examples of what these datasets look like:
 <br />
