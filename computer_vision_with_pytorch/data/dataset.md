@@ -6,6 +6,7 @@ torchvision.datasets.MNIST(root='./data', train=True, download=True, transform=t
 
 The raw file is too big to upload in github repositories and is unnecessary anyway
 
+
 Here are some examples of what these datasets look like:
 
 ## MNIST
