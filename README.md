@@ -2,7 +2,7 @@
 
 GIF for project demo
 
-GIF![화면 기록 2024-09-05 오후 5 06 09](https://github.com/user-attachments/assets/d58ca2c2-804a-459b-919b-21cf8c5f9a65)
+![start_training](https://github.com/user-attachments/assets/0eaf6880-0078-450c-bb4c-402ef91a8fd7)
 
 > Training Ending & Graph showing up
 > Example of model's prediction and answer
