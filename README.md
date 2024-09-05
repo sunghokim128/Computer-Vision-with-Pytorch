@@ -1,6 +1,6 @@
 # Image Classification with Pytorch
 
-
+## Project Demo
 ![start_training](https://github.com/user-attachments/assets/0eaf6880-0078-450c-bb4c-402ef91a8fd7)
   <- start training with designated parameters
 
