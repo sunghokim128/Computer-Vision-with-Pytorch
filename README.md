@@ -1,7 +1,9 @@
 # Image Classification with Pytorch
 
 GIF for project demo
-> Input Parse Value & start training GIF
+
+GIF![화면 기록 2024-09-05 오후 5 06 09](https://github.com/user-attachments/assets/d58ca2c2-804a-459b-919b-21cf8c5f9a65)
+
 > Training Ending & Graph showing up
 > Example of model's prediction and answer
 
