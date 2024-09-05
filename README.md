@@ -2,9 +2,11 @@
 
 
 ![start_training](https://github.com/user-attachments/assets/0eaf6880-0078-450c-bb4c-402ef91a8fd7)
- start training with designated parameters
+
+ (start training with designated parameters)
 ![end_training_with_plot](https://github.com/user-attachments/assets/67832b10-48b9-4b5d-a3cc-94d15ff6a71d)
- end training & testing with plot summary
+
+ (end training & testing with plot summary)
 
 
 
