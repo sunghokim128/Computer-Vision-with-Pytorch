@@ -11,6 +11,7 @@ The raw file is too big to upload in github repositories and is unnecessary anyw
 <br />
 Here are some examples of what these datasets look like:
 <br />
+
 ## MNIST
 ![enter image description here](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*9jCey4wywZ4Os7hF.png)
 
