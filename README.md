@@ -35,20 +35,20 @@ Tqdm
 ## Code Description
 **[core](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/tree/main/computer_vision_with_pytorch/core)**  folder contains functions that are crucial for the framework such as datasets, loss_fuctions and optimizers, plotting, etc
 
-**data**  folder is where all the downloaded datasets are stored
+**[data](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/tree/main/computer_vision_with_pytorch/data)**  folder is where all the downloaded datasets are stored
 
-**models** folder contains FCL, AlexNet, ResNet models used to classify images from datasets of MNIST, CIFAR10, CIFAR100
+**[models](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/tree/main/computer_vision_with_pytorch/models)** folder contains FCL, AlexNet, ResNet models used to classify images from datasets of MNIST, CIFAR10, CIFAR100
 
-**trained_model_storaged**  folder is where the program stores the trained models (which contains data for milions of parameters)
+**[trained_model_storaged](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/tree/main/computer_vision_with_pytorch/trained_model_storage)**  folder is where the program stores the trained models (which contains data for milions of parameters)
 
-**util**  folder contains functions that are used but are not crucial such as ones changing time format from [seconds] to [minutes:seconds]
+**[util](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/tree/main/computer_vision_with_pytorch/util)**  folder contains functions that are used but are not crucial such as ones changing time format from [seconds] to [minutes:seconds]
 
-***main***  file summarizes the whole process from deciding the training paraters to showing the train & test results in a plot
+***[main](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/blob/main/computer_vision_with_pytorch/main.py)***  file summarizes the whole process from deciding the training paraters to showing the train & test results in a plot
 
-***train***  file trains the model by 1 full epoch and returns the average trian & validation loss value for plotting data.
-It contains crucial steps in training the model such as loading image data in chuncks with torch.utils.data.Dataloader and computing the cost from loss functions through back-propagation with loss.backward()
-
-***test*** file tests the model with the test dataset and returns the test & validation accuracy value for plotting data.
+***[test](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/blob/main/computer_vision_with_pytorch/test.py)*** file tests the model with the test dataset and returns the test & validation accuracy value for plotting data.
 Top-1, and Top-5 accuracy functions are available.
+
+***[train](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/blob/main/computer_vision_with_pytorch/train.py)***  file trains the model by 1 full epoch and returns the average trian & validation loss value for plotting data.
+It contains crucial steps in training the model such as loading image data in chuncks with torch.utils.data.Dataloader and computing the cost from loss functions through back-propagation with loss.backward()
 
 > Written with [StackEdit](https://stackedit.io/).
