@@ -33,7 +33,7 @@ Tqdm
 ```
 
 ## Code Description
-**core**  folder contains functions that are crucial for the framework such as datasets, loss_fuctions and optimizers, plotting, etc
+**[core](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/tree/main/computer_vision_with_pytorch/core)**  folder contains functions that are crucial for the framework such as datasets, loss_fuctions and optimizers, plotting, etc
 
 **data**  folder is where all the downloaded datasets are stored
 
