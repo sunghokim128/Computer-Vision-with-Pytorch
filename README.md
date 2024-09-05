@@ -13,7 +13,7 @@
 The overall summary of the project can be found in the main.py file.
 What I have created here is basically a framework that can be used for training and evaluating pytorch models that are used to sort images.
 
-The datasets I used for this projects are *[MNIST](https://yann.lecun.com/exdb/mnist/), [CIFAR10, CIFAR100](https://www.cs.toronto.edu/~kriz/cifar.html)*
+The datasets I used for this projects are *[MNIST](https://www.tensorflow.org/datasets/catalog/mnist), [CIFAR10, CIFAR100](https://www.cs.toronto.edu/~kriz/cifar.html)*
 
 I started from making a simple FCL (Fully-Connected-Layer) model for a MNIST dataset. Then I tried changing the model architechture by changing the number of nodes in the hidden layers and the depth of the model. Plus I tried using different optimizers (learning rate, momentum), loss functions, activation functions to improve the model's accuracy.
 
