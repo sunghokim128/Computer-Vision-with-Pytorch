@@ -13,8 +13,8 @@
 
 
 ## Project Description
-The overall summary of the project can be found in the main.py file.
-What I have created here is basically a framework that can be used for training and evaluating pytorch models that are used to sort images.
+I created a framework that can be used for training & evaluating pytorch models that classifies images into different classes. Then I tried improving the model performance using this framework and also attempted to create my own model.
+
 
 The datasets I used for this projects are *[MNIST](https://www.tensorflow.org/datasets/catalog/mnist), [CIFAR10, CIFAR100](https://www.cs.toronto.edu/~kriz/cifar.html)*
 
