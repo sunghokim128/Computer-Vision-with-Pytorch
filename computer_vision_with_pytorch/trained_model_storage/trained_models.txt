@@ -1,1 +1,1 @@
-hi
+When training is complete, trained models will be saved in files ending with .pth in this directory
