@@ -6,11 +6,13 @@ import argparse
 from test import *
 from train import train
 from core.plot import plot
-from core.summary import show_summary
+from util.summary import show_summary
+from util.operation import operation
 
 # import my models from other directories
 from models.FCL import *
-
+from models.AlexNet import *
+from models.ResNet import *
 
 if __name__ == '__main__':
 
@@ -30,17 +32,17 @@ if __name__ == '__main__':
     parser.add_argument("-o", "--optimizer", help="Choose from sgd / adam", type=str)
     parser.add_argument("-m", "--model", help="Format: [datasetName_modelArchitecture]", type=str)
     parser.add_argument("-t", "--top1", help="Activate if you want top-1 accuracy", type=str, default=None)
+    parser.add_argument("-O", "--operation", help="1 = Train & Test, 2 = Train Only, 3 = Continued Train", type=int, default=1)
     args = parser.parse_args()
 
     # declare model
     model = eval(args.model + "()")
 
-    # naming the model with the following format organizes the model files saved in [trained_model_storage]
-    model_name = input("Write Model Name as [dataset_model]: ")
-
     # set the correct directory to save the model file in [trained_model_storage]
-    model_path = "/Users/apple/PycharmProjects/computer_vision_with_pytorch/trained_model_storage/" + model_name
+    model_path = "/Users/apple/PycharmProjects/computer_vision_with_pytorch/trained_model_storage/" + args.model
 
+    # gives True/False values for the flags below.
+    LOAD_PREV_MODEL, DO_TEST = operation(args.operation)
 
     '''
     Main Function 1: Notification
@@ -50,27 +52,27 @@ if __name__ == '__main__':
     top-5 is the default, and it means the answer was within the top 5 choice of the model
     '''
     show_summary(args, model)
-    DO_CONTINUED_TRAINING = False
-    DO_TEST = True
-
-    print("\nDO_CONTINUED_TRIANING: {}".format(DO_CONTINUED_TRAINING))
-    print("DO_TEST: {}".format(DO_TEST))
-    if args.top1:
-        print("Test result will show Top-1 accuracy\n")
+    if LOAD_PREV_MODEL:
+        print("\nDO_CONTINUED_TRIANING: {}".format(LOAD_PREV_MODEL))
+    if DO_TEST:
+        if args.top1:
+            print("Test result will show Top-1 accuracy\n")
+        else:
+            print("Test result will show Top-5 accuracy\n")
     else:
-        print("Test result will show Top-5 accuracy\n")
+        print("Training Only\n")
 
 
     '''
     Main Function 2: Continued Training
-    Sometimes, the initial epoch might not provide enough training. In such cases, the Continued training section allows
-    additional training of the designated model.
-    When it is the first time training a certain model, simply set DO_CONTINUED_TRAINING=False
+    Sometimes, the initial epoch might not provide enough training. 
+    In such cases, the Continued training section allows additional training of the designated model.
     '''
-    if DO_CONTINUED_TRAINING:
+    if LOAD_PREV_MODEL:
         file_directory = "/Users/apple/PycharmProjects/computer_vision_with_pytorch/trained_model_storage/"
         file_name = input("model for continued training: ") + ".pth"
         model.load_state_dict(torch.load(file_directory + file_name, weights_only=True))
+        new_path = file_directory + file_name.strip("epoch.pth")
 
 
     '''
@@ -104,12 +106,20 @@ if __name__ == '__main__':
                 validation_accuracy.append(val_acc)
 
         # Even if program shuts down mid-training, the most recent version will be saved in trained_model_storage
-        torch.save(model.state_dict(), model_path + "_{}epoch.pth".format(epoch))
-        if epoch > 1:
-            os.remove(model_path + "_{}epoch.pth".format(epoch - 1))
+        if LOAD_PREV_MODEL:
+            torch.save(model.state_dict(), new_path + "+{}epoch.pth".format(epoch))
+            if epoch > 1:
+                os.remove(new_path + "+{}epoch.pth".format(epoch - 1))
+        else:
+            torch.save(model.state_dict(), model_path + "_{}epoch.pth".format(epoch))
+            if epoch > 1:
+                os.remove(model_path + "_{}epoch.pth".format(epoch - 1))
 
     # Training completion notification
-    print('Saving training results at :', model_path + "_{}epoch.pth".format(epoch))
+    if LOAD_PREV_MODEL:
+        print('Saving training results at :', new_path + "+{}epoch.pth".format(args.epoch))
+    else:
+        print('Saving training results at :', model_path + "_{}epoch.pth".format(epoch))
 
 
     '''
