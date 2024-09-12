@@ -13,7 +13,9 @@
 
 
 ## Project Description
-I created a framework that can be used for training & evaluating pytorch models that classifies images into different classes. Then I tried improving the model performance using this framework and also attempted to create my own model.
+I created a framework that can be used for training & evaluating pytorch models that classifies images into different classes. 
+All the parameters used for training is passed through the terminal, so the source code is un-touched when operating this program.
+Using this framework, I tried improving the model performance and also attempted to create my own model.
 
 
 The datasets I used for this projects are *[MNIST](https://www.tensorflow.org/datasets/catalog/mnist), [CIFAR10, CIFAR100](https://www.cs.toronto.edu/~kriz/cifar.html)*
@@ -40,7 +42,7 @@ Tqdm
 ```
 
 ## Code Description
-**[core](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/tree/main/computer_vision_with_pytorch/core)**  folder contains functions that are crucial for the framework such as datasets, loss_fuctions and optimizers, plotting, etc
+**[core](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/tree/main/computer_vision_with_pytorch/core)**  folder contains functions that are crucial for the framework such as datasets, loss_fuctions, optimizers and plotting
 
 **[data](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/tree/main/computer_vision_with_pytorch/data)**  folder is where all the downloaded datasets are stored
 
@@ -48,7 +50,7 @@ Tqdm
 
 **[trained_model_storaged](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/tree/main/computer_vision_with_pytorch/trained_model_storage)**  folder is where the program stores the trained models (which contains data for milions of parameters)
 
-**[util](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/tree/main/computer_vision_with_pytorch/util)**  folder contains functions that are used but are not crucial such as ones changing time format from [seconds] to [minutes:seconds]
+**[util](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/tree/main/computer_vision_with_pytorch/util)**  folder contains functions that are used as tools to make the code look more organized. It contains functions like show_as_minute and summary
 
 ***[main](https://github.com/sunghokim128/Computer-Vision-with-Pytorch/blob/main/computer_vision_with_pytorch/main.py)***  file summarizes the whole process from deciding the training paraters to showing the train & test results in a plot
 
